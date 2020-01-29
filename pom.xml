@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>nl.pdptst</groupId>
+    <artifactId>gs_rest</artifactId>
+    <version>1.27-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>hateoas</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>local-nexus</id>
+            <name>Releases</name>
+            <url>http://nexus01.westeurope.cloudapp.azure.com:8081/repository/maven-releases</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>local-nexus</id>
+            <name>Snapshot</name>
+            <url>http://nexus01.westeurope.cloudapp.azure.com:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>ci</id>
+            <modules>
+                <module>hateoas</module>
+                <module>itest</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nxrm3-maven-plugin</artifactId>
+                <version>1.0.2</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <nexusUrl>http://localhost:8082</nexusUrl>
+
+                    <!-- The server "id" element from settings to use authentication from settings.xml-->
+                    <serverId>local-nexus</serverId>
+
+                    <!-- Which repository to deploy to -->
+                    <repository>maven-releases</repository>
+
+                    <!-- Skip the staging deploy mojo -->
+                    <skipNexusStagingDeployMojo>false</skipNexusStagingDeployMojo>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
