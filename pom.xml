@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>nl.pdptst</groupId>
-    <artifactId>gs_rest</artifactId>
+    <artifactId>student_rest</artifactId>
     <version>1.27-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -19,7 +19,7 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://github.com/binne101/gs_rest.git</connection>
+        <connection>scm:git:https://github.com/binne101/student_rest.git</connection>
     <tag>HEAD</tag>
   </scm>
 
