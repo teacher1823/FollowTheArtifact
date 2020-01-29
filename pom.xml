@@ -8,7 +8,7 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>nl.pdptst</groupId>
+    <groupId>nl.example.teachertst</groupId>
     <artifactId>student_rest</artifactId>
     <version>1.27-SNAPSHOT</version>
 

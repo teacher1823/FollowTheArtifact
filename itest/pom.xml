@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>student_rest</artifactId>
-        <groupId>nl.pdptst</groupId>
+        <groupId>nl.example.teachertst</groupId>
         <version>1.27-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -70,7 +70,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>nl.pdptst.hateoas.RestHateoasApplication</mainClass>
+                    <mainClass>RestHateoasApplication</mainClass>
                     <!--<mainClass>com.consol.citrus.samples.todolist.TodoApplication</mainClass>-->
                     <useTestClasspath>false</useTestClasspath>
                     <classesDirectory>../hateoas/target/classes</classesDirectory>

@@ -1,4 +1,4 @@
-package nl.pdptst.hateoas;
+package nl.example.teachertst.hateoas;
 
 import org.junit.Test;
 

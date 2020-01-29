@@ -1,4 +1,4 @@
-package nl.pdptst.hateoas.hello;
+package nl.example.teachertst.hateoas.hello;
 
 public class Greeting {
 

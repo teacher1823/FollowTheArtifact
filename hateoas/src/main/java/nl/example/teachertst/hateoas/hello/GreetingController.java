@@ -1,4 +1,4 @@
-package nl.pdptst.hateoas.hello;
+package nl.example.teachertst.hateoas.hello;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
