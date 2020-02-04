@@ -70,7 +70,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>RestHateoasApplication</mainClass>
+                    <mainClass>nl.example.teachertst.hateoas.RestHateoasApplication</mainClass>
                     <useTestClasspath>false</useTestClasspath>
                     <classesDirectory>../hateoas/target/classes</classesDirectory>
                 </configuration>
