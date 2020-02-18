@@ -19,7 +19,7 @@
     </modules>
 
     <scm>
-        <connection>scm:git:https://github.com/binne101/student_rest.git</connection>
+        <connection>scm:git:https://github.com/teacher1823/FollowTheArtifact.git</connection>
       <tag>HEAD</tag>
   </scm>
 
