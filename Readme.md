@@ -3,5 +3,5 @@ Deze cursus beschrijft het pad die een java artifact maakt door een CI pipeline 
 Follow the artifact:
 - git
 - maven
-- jenkins 
+- jenkins
 - nexus
