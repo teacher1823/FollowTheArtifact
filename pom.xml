@@ -10,7 +10,7 @@
 
     <groupId>nl.example.teachertst</groupId>
     <artifactId>student_rest</artifactId>
-    <version>2.10-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -25,13 +25,13 @@
 
     <distributionManagement>
         <repository>
-            <id>local-nexus</id>
+            <id>azure-nexus</id>
             <name>Releases</name>
             <url>http://t1823ci.westeurope.cloudapp.azure.com:8081/repository/maven-releases</url>
         </repository>
 
         <snapshotRepository>
-            <id>local-nexus</id>
+            <id>azure-nexus</id>
             <name>Snapshot</name>
             <url>http://t1823ci.westeurope.cloudapp.azure.com:8081/repository/maven-snapshots</url>
         </snapshotRepository>
@@ -65,7 +65,7 @@
                     <nexusUrl>http://localhost:8082</nexusUrl>
 
                     <!-- The server "id" element from settings to use authentication from settings.xml-->
-                    <serverId>local-nexus</serverId>
+                    <serverId>azure-nexus</serverId>
 
                     <!-- Which repository to deploy to -->
                     <repository>maven-releases</repository>
