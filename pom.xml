@@ -27,13 +27,13 @@
         <repository>
             <id>local-nexus</id>
             <name>Releases</name>
-            <url>http://nexus01.westeurope.cloudapp.azure.com:8081/repository/maven-releases</url>
+            <url>http://t1823jenkins.westeurope.cloudapp.azure.com:8081/repository/maven-releases</url>
         </repository>
 
         <snapshotRepository>
             <id>local-nexus</id>
             <name>Snapshot</name>
-            <url>http://nexus01.westeurope.cloudapp.azure.com:8081/repository/maven-snapshots</url>
+            <url>http://t1823jenkins.westeurope.cloudapp.azure.com:8081/repository/maven-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
