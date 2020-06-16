@@ -10,7 +10,7 @@
 
     <groupId>nl.example.teachertst</groupId>
     <artifactId>student_rest</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <version>0.7</version>
 
     <packaging>pom</packaging>
 
@@ -20,7 +20,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/teacher1823/FollowTheArtifact.git</connection>
-      <tag>HEAD</tag>
+      <tag>v0.7</tag>
   </scm>
 
     <distributionManagement>
