@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 public class GreetingController {
 
-    private static final String template = "Helloo all you all, %s!";
+    private static final String template = "Helloo, this is planet earth, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @Value("${switch.feature.enabled}")
