@@ -39,4 +39,8 @@
         </plugins>
     </build>
 
+
+  <scm>
+    <tag>v0.9</tag>
+  </scm>
 </project>
