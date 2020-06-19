@@ -10,7 +10,7 @@
 
     <groupId>nl.example.teachertst</groupId>
     <artifactId>student_rest</artifactId>
-    <version>0.4-SNAPSHOT</version>
+    <version>0.9-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
