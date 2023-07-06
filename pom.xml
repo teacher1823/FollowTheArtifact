@@ -25,13 +25,13 @@
 
     <distributionManagement>
         <repository>
-            <id>azure-nexus</id>
+            <id>local-nexus</id>
             <name>Releases</name>
             <url>http://localhost:8082/repository/maven-releases</url>
         </repository>
 
         <snapshotRepository>
-            <id>azure-nexus</id>
+            <id>local-nexus</id>
             <name>Snapshot</name>
             <url>http://localhost:8082/repository/maven-snapshots</url>
         </snapshotRepository>
@@ -65,7 +65,7 @@
                     <nexusUrl>http://localhost:8082</nexusUrl>
 
                     <!-- The server "id" element from settings to use authentication from settings.xml-->
-                    <serverId>azure-nexus</serverId>
+                    <serverId>local-nexus</serverId>
 
                     <!-- Which repository to deploy to -->
                     <repository>maven-releases</repository>
